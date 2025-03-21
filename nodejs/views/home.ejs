@@ -1,0 +1,80 @@
+<%- include('header') %>
+
+<main class="max-w-[1024px] m-auto">
+    <div class="px-3">
+        <div class="px-2">
+
+            <div class="flex flex-wrap justify-center gap-4 pb-10">
+                <% for (let i = 0; i < games.length; i++) {
+                    const element = games[i];
+                    %>
+                    <div class="p-3 bg-[#121237] rounded-2xl max-w-[150px] sm:max-w-[200px]">
+                        <img src="<%- element.img %>" alt="" class="rounded-xl w-full" loading="lazy">
+                        <a href="/game/<%- element.slug %>">
+                            <img src="./image/play_button.png" alt="" class="w-[60px] m-auto mt-[-25px]">
+                        </a>
+                        <div class="text-center text-[#ffffff] font-medium"><%- element.name %></div>
+                    </div>
+                    <%
+                    if(i == 7){
+                        %>
+                        <div class="p-3 w-full">
+                            <div id='div-gpt-ad-1720714168712-0' style='min-width: 336px; '>
+                                <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1720714168712-0'); });
+                                </script>
+                            </div>
+                        </div>
+                        <%
+                    }
+                    if(i == 15){
+                        %>
+                        <div class="p-3 w-full">
+                            <div id='div-gpt-ad-1720714228348-0' style='min-width: 336px; '>
+                                <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1720714228348-0'); });
+                                </script>
+                            </div>
+                        </div>
+                        <%
+                    }
+                    if(i == 23){
+                        %>
+                        <div class="p-3 w-full">
+                            <div id='div-gpt-ad-1720714287596-0' style='min-width: 336px;'>
+                                <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1720714287596-0'); });
+                                </script>
+                            </div>
+                        </div>
+                        <%
+                    }
+                    if(i == 31){
+                        %>
+                        <div class="p-3 w-full">
+                            <div id='div-gpt-ad-1720714417761-0' style='min-width: 300px; min-height: 1px;'>
+                                <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1720714417761-0'); });
+                                </script>
+                            </div>
+                        </div>
+                        <%
+                    }
+                    if(i == 39){
+                        %>
+                        <div class="p-3 w-full">
+                            <div id='div-gpt-ad-1720714467600-0' style='min-width: 300px; min-height: 1px;'>
+                                <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1720714467600-0'); });
+                                </script>
+                            </div>
+                        </div>
+                        <%
+                    }
+                } %>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('footer') %>

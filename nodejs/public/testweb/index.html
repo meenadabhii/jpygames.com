@@ -1,0 +1,2597 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	  <title>Admin Dashboard</title>
+	 <!--  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+	   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>	
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+	<div class="flex h-screen overflow-hidden">
+    <nav class="admin-navbar flex flex-col justify-between">
+		<div>
+	      <div class="navbar-header flex flex-col">
+	        <a href="#" data-page="dashboard">
+	       		<i class='bx bxl-meta'></i>
+	   		</a>
+	   		<a href="#">
+	   			<span class="badge bg-primary badge-tag px-2">M</span>
+	   		</a>
+	      </div>
+	      <ul class="navbar-menu">
+	        <li class="menu-item active">
+	          <a href="#" data-page="dashboard">
+	            <i class='boxs-time'></i>
+	           <span class="inline-flex items-center rounded-md bg-red-700 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-red-600/10 notfication-Btn">1</span>
+	          </a>
+	        </li>
+	        <li class="menu-item">
+	          <a href="#" data-page="messages">
+	            <i class='grid-section'></i>
+	          </a>
+	        </li>
+	        <li class="menu-item">
+	          <a href="#" data-page="files">
+	            <i class="bi-layout-text"></i>
+	          </a>
+	        </li>
+	        <li class="menu-item">
+	          <a href="#" data-page="users">
+	            <i class="user-icon"></i>
+	          </a>
+	        </li>
+	        <li class="menu-item">
+	          <a href="#" data-page="settings">
+	            <i class='data-full'></i>
+	          </a>
+	        </li>
+	        <li class="menu-item">
+	          <a href="#" data-page="settings">
+	            <i class='vol-full'></i>
+	          </a>
+	        </li>
+	        <li class="menu-item">
+	          <a href="#" data-page="settings">
+	            <i class='menu-line'></i>
+	          </a>
+	        </li>
+	      </ul>
+	    </div>
+	    <div>
+		      <ul class="navbar-menu">
+		        <li class="menu-item ">
+		          <a href="#" data-page="dashboard">
+		            <i class='bx bx-question-mark'></i>
+		          </a>
+		        </li>
+		        <li class="menu-item">
+		          <a href="#" data-page="messages">
+		            <i class="box-wallet"></i>
+		             <span class="inline-flex items-center rounded-md bg-red-700 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-red-600/10 notfication-Btn well">1</span>
+		          </a>
+		        </li>
+		        <li class="menu-item">
+		          <a href="#" data-page="files">
+		            <i class='box-satting'></i>
+		          </a>
+		        </li>
+		        <li class="menu-item">
+		          <a href="#" data-page="users">
+		            <i class="icon-bell"></i>
+		            <span class="inline-flex items-center rounded-md bg-red-700 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-red-600/10 notfication-Btn well bell">1</span>
+		          </a>
+		        </li>
+		        <li class="menu-item">
+		          <a href="#" data-page="settings">
+		            <i class='icon-search'></i>
+		          </a>
+		        </li>
+		        <li class="menu-item">
+		          <a href="#" data-page="settings">
+		          <i class="bi bi-bug"></i>
+		          </a>
+		        </li>
+		      </ul>
+		</div>
+    </nav>
+
+    <main class="flex-1 overflow-x-hidden overflow-y-auto main-setion">
+      <header class="p-2 flex justify-between items-center   px-3 header-bar">
+      	<div class="flex gap-2 items-center">
+	        <h2 id="pageTitle" class="text-2xl font-bold text-black m-0" style="font-size: 18px;">Ads</h2>
+	        <div class="flex items-center p-1 px-3  border-solid border-2 rounded bg-white">
+	        	<span class="badge bg-primary badge-tag px-2">M</span>
+	        	<span class="border-empty mx-2"></span>
+	        	<span class="badge  badge-ver"><i class='bx bx-tv'></i></span>
+	        	<select class="form-select bg-transparent border-0 focus:outline-none shadow-none px-2 selection text-black vision-section" aria-label="Default select example">
+					  <option selected>Vision 11 X Blink Neo X...</option>
+					  <option value="1">One</option>
+					  <option value="2">Two</option>
+					  <option value="3">Three</option>
+				</select>
+	        </div>			
+			
+	    </div>    
+        <div class="flex items-center gap-2">
+        	<p class="m-0 text-black">Updated Just now</p>
+        	<div class="p-1 border-2 px-2 rounded cursor-pointer" style="border-color: #ccc;">
+        		<i class='bx bx-refresh text-black'></i>
+        	</div>
+        	<div class="p-1 border-2 px-2 rounded" style="border-color: #ccc;">
+        		<a href="#" class="text-black no-underline">
+        			<i class='bx bxs-trash'></i>
+        			Discard Drafts
+        			
+        		</a>	
+        	</div>
+        	<div class="p-1 border-2 px-2 rounded review-btn">
+        		<a href="#" class="text-black no-underline text-white">
+        			Review and publish (2)
+        		</a>	
+        	</div>
+        	<div class="p-1 border-2 px-2 rounded cursor-pointer" style="border-color: #ccc;">
+        		<i class="bi bi-three-dots text-black"></i>
+        	</div>
+        </div>
+      </header>
+
+      <div class="flex mb-2 px-2 gap-2">
+      	 <div class="w-5/6">
+			  <div class="relative mt-2 rounded-md shadow-sm">
+			    <!-- <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+			      <span class="text-gray-500 sm:text-sm">$</span>
+			    </div> -->
+			    <input type="text" name="price" id="price" class="block bg-white rounded w-full rounded-md border-0 py-2.5 pl-7 pr-20  ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="search and filter">
+			    
+			  </div>
+		</div>  
+		<div class=" 1/4">
+			<div class="inset-y-0 right-0 flex items-center w-full border-2 rounded montn-selection justify-between mt-2 ">
+			      	<!-- <i class='bx bxs-calendar text-black ml-2'></i> -->
+			      	  <!-- <select name="cars" id="cars" class="text-black bg option-list w-full p-2 px-3"> -->
+   						 <!-- <option value="volvo">This month:1 Sep 2024-28 Sep 2024</option> -->
+    					 <!-- <option value="saab">Saab</option>
+    					 <option value="opel">Opel</option>
+              			 <option value="audi">Audi</option> -->
+					  <!-- </select> -->
+					  <div class="popover">
+							 <button class="popover__trigger text-black p-2 px-3 flex items-center gap-2 w-full border-q rounded montn-selection justify-between">
+								<i class='bx bxs-calendar text-black ml-2'></i><span class="whitespace-nowrap">This month:1 Sep 2024-28 Sep 2024</span>
+								<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+							</button>
+						<ul class="popover__menu">
+							<div class="flex">
+								<div class="day-section p-2 px-4">
+									<div class="flex flex-col gap-4">
+										<div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Today</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Yester day</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Last 7 day</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Last 14 day</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Last 30 day</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">This week</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Last week</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">This month</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Last month</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Maximum</p>
+									 	</div>
+										 <div class="flex items-center gap-2">
+											<input type="radio" id="option1" name="options" class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500">
+											<p class="text-black">Custom</p>
+									 	</div>
+									</div>
+								</div>
+								<div class="calendar text-black">
+									<div class="calendar__month">
+									<div class="cal-month__previous"><i class='bx bx-chevron-left text-blck'></i></div>
+									<div class="cal-month__current text-black"></div>
+									<div class="cal-month__next"><i class='bx bx-chevron-right text-black'></i></div>
+									</div>
+									<div class="calendar__head text-center">
+									<div class="cal-head__day"></div>
+									<div class="cal-head__day"></div>
+									<div class="cal-head__day"></div>
+									<div class="cal-head__day"></div>
+									<div class="cal-head__day"></div>
+									<div class="cal-head__day"></div>
+									<div class="cal-head__day"></div>
+									</div>
+									<div class="calendar__body">
+									<div class="cal-body__week">
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+									</div>
+									<div class="cal-body__week">
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+									</div>
+									<div class="cal-body__week">
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+									</div>
+									<div class="cal-body__week">
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+									</div>
+									<div class="cal-body__week">
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+									</div>
+									<div class="cal-body__week">
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+										<div class="cal-body__day"></div>
+									</div>
+									<div class="mt-3">
+										<div class="flex ml-5 gap-2 items-center">
+											<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+											<p class="text-black">compare</p>
+										</div>		
+									</div>
+									<div class="mt-3 flex items-center gap-2">
+										<div class="flex justify-between gap-5 items-center w-1/3 border-2 p-2   ml-5">
+										    <p>This month</p>
+											<p><i class="bi bi-caret-down-fill text-black"></i></p>
+										</div>
+										<div class="border-2 p-2">
+											<p class="text-black">1 Septembe...</p>
+										</div>
+										<div class="border-2 p-2">
+											<p class="text-black">1 Septembe...</p>
+										</div>
+									</div>
+									<div class="flex justify-between items-center px-5 mt-3">
+										<p class="text-black">Date are in Asia / Calcutta</p>
+										<div class="flex gap-2">
+											<div class="border-2 p-2">
+												<p class="text-black">Cancel</p>
+											</div>
+											<div class="border-2 p-2" style="background-color: #0a78be;">
+												<p class="text-white">Update</p>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+			</div>
+		</div>	
+      </div>
+      <div class="py-2 px-2 space-y-8">
+        <div id="dashboardContent" class="bg-white">
+
+          <div class="rounded border mt-1">
+					  <!-- Tabs -->
+					  <ul id="tabs" class="inline-flex pt-3 px-3 w-full px-3 tabs-setion gap-2">
+					    <li class="px-3 flex justify-between w-96 text-gray-800 font-semibold py-2 rounded-t border-t border-r border-l tab-active -mb-px"><a id="default-tab" href="#first"><i class='bx bx-folder mr-2'></i>Campaigns</a>  <span class="ml-5 selected-option p-1 px-2 text-white rounded">1 Selected <i class="bi bi-x"></i></span></li>
+					    <li class="px-4 flex justify-between w-96 text-gray-800 font-semibold py-2 rounded-t"><a href="#second"><i class='bx bxs-widget mr-2' ></i>Ad sets for 1 campaign</a><span class="ml-5 selected-option p-1 px-2 text-white rounded">1 Selected</li>
+					    <li class="px-4 flex justify-between w-96 text-gray-800 font-semibold py-2 rounded-t"><a href="#third"><i class='bx bxs-book-alt'></i> Ads For 1 Campaign</a><span class="ml-5 selected-option p-1 px-2 text-white rounded">1 Selected</li>
+					  </ul>
+
+					  <!-- Tab Contents -->
+					  <div id="tab-contents">
+					    <div id="first" class="p-4">
+							<div class="flex justify-between	">
+								<ul class="left-btn-group flex justify-between gap-1">
+									<li class="px-2 py-2 craete-btn flex items-center rounded cursor-pointer text-base"><i class='bx bx-plus mr-1'></i>Craete</li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer duplicate-btn text-black text-base"><i class='bx-file-blank mr-2'></i>Duplicate</li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="bi-pencils mr-2"></i>Edit</li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="bx bxs-trash"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bxs-flask mr-2 text-black'></i>A/B test</li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="bi bi-tag"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer  text-black text-base">More<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+								</ul>
+								<ul class="left-btn-group flex justify-between gap-1">
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer duplicate-btn text-black text-base"><i class="layout-three-columns  mr-2"></i></i>Columns:Performance <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="break-down mr-2"></i>Breakdown <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bxs-report mr-2'></i>Reports <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bx bx-export mr-2'></i>Export 
+										<span><i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></span></li>
+								</ul>
+							</div>
+							<!-- <div class="main-table flex mt-2"> -->
+								<!-- <div class="left-table">
+									<div class="custom-table text-black">
+										<div class=" table-section">
+											<div class="overflow-x-auto">
+													<table class="min-w-full border border-gray-300">
+														<thead class="bg-white text-black">
+														  <tr>
+															  <th class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></th>
+															  <th class="border border-gray-300 p-2">
+																  off/On
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																<div class="flex justify-between"> 
+																	Campaign 
+																	<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+																</div>
+																</th>
+															</tr>
+															
+														  </thead>
+														  <tbody class="text-black">
+																<tr>
+																	<td class="border border-gray-300 p-2">
+																		<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+																	</td>
+																  	<td class="border border-gray-300 p-2">
+																		<label class="switch">
+																			<input type="checkbox" checked="">
+																		  <span class="slider round"></span>
+																	 </label>
+																  	</td>
+																  	<td class="border border-gray-300 p-2">
+																		  <div class="flex items-center gap-3">
+																	  	</div>
+																  	</td>
+																	
+																</tr>
+																
+														  </tbody>
+													</table>	
+											 </div>	
+									</div>
+									</div>
+								</div> -->
+								<!-- <div class="right-table">
+									<div class="custom-table text-black">
+										<div class=" table-section">
+											<div class="overflow-x-auto">
+													<table class="min-w-full border border-gray-300">
+														<thead class="bg-white text-black">
+														  <tr>
+															<th class="border border-gray-300 p-2">
+																<div class="flex justify-between items-center"> 
+																	<p>Delivery <i class='bx bx-up-arrow-alt' style="color: #0a78be;"></i></p>
+																	<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+																</div>
+														  </th>
+
+															  <th class="border border-gray-300 p-2">
+																Bid strategy
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																  Budget
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																	<div class="flex justify-between"> 
+																		Attribution setting																			 
+																	</div>
+																</th>
+															  
+															  
+															  <th class="border border-gray-300 p-2">
+																   <div class="flex justify-between items-center"> 
+																			<p>Result</p>
+																			<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+															        </div>
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																	<div class="flex justify-between items-center"> 
+																		<p>Reach</p>
+																		<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+																	</div>
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																	<div class="flex justify-between items-center"> 
+																		<p>Imprassions</p>
+																		<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+																	</div>
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																	<div class="flex justify-between items-center"> 
+																		<p>Cost per result</p>
+																		<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+																	</div>
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																<div class="flex justify-between items-center"> 
+																	<p>Amount spant</p>
+																	<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+																</div>
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																	<div class="flex justify-between items-center"> 
+																		<p>Ends</p>
+																		<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+																	</div>
+															  </th>
+															  <th class="border border-gray-300 p-2">
+																<i class="bx bx-plus-circle"></i>
+															  </th>
+														  </tr>
+														  </thead>
+														  <tbody class="text-black">
+															<tr>
+																<td class="border border-gray-300 p-2">
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p>Using ad set bid str...</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p>using ad budget</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p>1-day click or-1-day view</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p class="text-right">146</p>
+																	<p>Mobile app installation</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p class="text-right">11.956</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p class="text-right">15.510</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p class="text-right">₹ 18.53</p>
+																	<p>Per Mobile app Install</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p class="text-right">2,705.96</p>
+																</td>
+																<td class="border border-gray-300 p-2">
+																	<p class="text-right">Ongoing</p>
+																</td>
+																<td class="border border-gray-300 p-2"></td>
+															</tr>
+															
+														  </tbody>
+														  
+													</table>	
+											 </div>	
+									</div>
+									</div>
+								</div>	 -->
+							<!-- </div>	 -->
+							<div class="mt-2 table-section">
+								<div class="overflow-x-auto">
+									<table class="min-w-full border border-gray-300">
+										<thead class="bg-white text-black">
+											<tr>
+												<th class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></th>
+												<th class="border border-gray-300 p-2">
+													off/On
+												</th>
+												<th class="border border-gray-300 p-2">
+												  	<div class="flex justify-between"> 
+														  Campaign 
+													 	 <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+												  	</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+													<div class="flex justify-between items-center"> 
+														<p>Delivery <i class='bx bx-up-arrow-alt' style="color: #0a78be;"></i></p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+													</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+												Bid strategy
+												</th>
+												<th class="border border-gray-300 p-2">
+													Budget
+												</th>
+												<th class="border border-gray-300 p-2">
+													<div class="flex justify-between"> 
+														Attribution setting																			 
+													</div>
+												</th>
+												<!-- Repeat headers -->
+												<th class="border border-gray-300 p-2">
+													<div class="flex justify-between items-center"> 
+															<p>Result</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+													</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+														<div class="flex justify-between items-center"> 
+															<p>Reach</p>
+															<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+														</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+														<div class="flex justify-between items-center"> 
+															<p>Imprassions</p>
+															<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+														</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+														<div class="flex justify-between items-center"> 
+															<p>Cost per result</p>
+															<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+														</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+													<div class="flex justify-between items-center"> 
+														<p>Amount spant</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+													</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+													<div class="flex justify-between items-center"> 
+														<p>Ends</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+													</div>
+												</th>
+												<th class="border border-gray-300 p-2">
+												<i class="bx bx-plus-circle"></i>
+												</th>
+												<!-- Repeat headers -->
+											</tr>
+										</thead>
+										<tbody class="text-black">
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													 
+ 													 <input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+											<tr>
+												<td class="border border-gray-300 p-2">
+													<input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked="">
+														<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+													<p class="m-0 ">Loan emi setumar use 3</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-left">Off</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>Using ad set bid str...</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>using ad budget</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p>1-day click or-1-day view</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">146</p>
+													<p>Mobile app installation</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">11.956</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">15.510</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">₹ 18.53</p>
+													<p>Per Mobile app Install</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">2,705.96</p>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<p class="text-right">Ongoing</p>
+												</td>
+												<td class="border border-gray-300 p-2"></td>
+											</tr>
+									  </tbody>
+									</table>
+								</div>	
+							</div>		
+					    </div>
+					    <div id="second" class="hidden p-4">
+					      <!-- Second tab -->
+						      <div class="flex justify-between	">
+						      	<ul class="left-btn-group flex justify-between gap-1">
+									<li class="px-2 py-2 craete-btn flex items-center rounded cursor-pointer text-base"><i class='bx bx-plus mr-1'></i>Craete</li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer duplicate-btn text-black text-base"><i class='bx-file-blank mr-2'></i>Duplicate</li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="bi-pencils mr-2"></i>Edit</li>
+									
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bxs-flask mr-2 text-black'></i>A/B test</li>
+									
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer  text-black text-base">More<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+						      	</ul>
+						      	<ul class="left-btn-group flex justify-between gap-1">
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer duplicate-btn text-black text-base"><i class="layout-three-columns  mr-2"></i></i>Columns:Performance <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="break-down mr-2"></i>Breakdown <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bxs-report mr-2'></i>Reports <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+									<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bx bx-export mr-2'></i>Export 
+										<span><i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></span></li>
+						      	</ul>
+						      </div>
+						      <div class="mt-2 table-section">
+					      			<div class="overflow-x-auto">
+					      					<table class="min-w-full border border-gray-300">
+					      						<thead class="bg-white text-black">
+										            <tr>
+										                <th class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></th>
+										                <th class="border border-gray-300 p-2">
+										                	off/On
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										              		<div class="flex justify-between"> 
+										              				Add 
+										              				<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+										              		</div>
+										             	 </th>
+										                
+										                <!-- Repeat headers -->
+										                <th class="border border-gray-300 p-2">
+										                	<div class="flex justify-between items-center"> 
+										              				<p>Delivery <i class='bx bx-up-arrow-alt' style="color: #0a78be;"></i></p>
+										              				<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+										              		</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div>
+										                			<p>Bid strategy</p>
+										                			<!-- <p class="text-right" style="color:#ccc;font-size: 12px;"><span>Add set</span></p> -->
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div>
+										                			<p>Budget</p>
+										                			<!-- <p class="text-right" style="color:#ccc;font-size: 12px;"><span>Add set</span></p> -->
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div>
+										                			<p>Last significant edit</p>
+										                			
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div>
+										                			<p>Attribution setting</p>
+										                			
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div class="flex justify-between">
+										                			<p><i class="bi bi-info-circle-fill mr-1"></i>Result</p>
+										                			<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div class="flex justify-between">
+										                			<p>Reach</p>
+										                			<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div class="flex justify-between">
+										                			<p>Imprassions</p>
+										                			<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div class="flex justify-between">
+										                			<p>Cost per result</p>
+										                			<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+										                	</div>
+										                </th>
+										                
+										                <th class="border border-gray-300 p-2">
+										                	<div class="flex justify-between items-center">
+										                			<p class="text-left">Amount spant</p>
+										                			<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<div class="flex justify-between items-center">
+										                			<p class="text-left">Ends</p>
+										                			<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+										                	</div>
+										                </th>
+										                <th class="border border-gray-300 p-2">
+										                	<p>Schedule</p>
+										                </th>
+														<th class="border border-gray-300 p-2">
+															<i class="bx bx-plus-circle"></i>
+														</th>
+										            </tr>
+        											</thead>
+        											<tbody class="text-black">
+        												<tr>
+        													<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+											               	<td class="border border-gray-300 p-2">
+																<!-- <label class="switch">
+																	<input type="checkbox" checked>
+  																		<span class="slider round"></span>
+																</label> -->
+																<input class="switch" type="checkbox" checked="true">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="flex items-center gap-3">
+											                		<p class="m-0 new-app">New App promotion ad set - Copy</p>
+											                	</div>
+											                </td>
+															<td class="border border-gray-300 p-2">
+																<div class="flex items-center gap-2">
+																		<input 
+																			type="radio" 
+																			id="option1" 
+																			name="options" 
+																			class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																			/>
+																			<p>Campaign off</p>
+																</div>
+															</td>
+															<td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Highest Volumn</p>
+																	<p class="text-right active-ads"><span>app installs</span></p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Using Campaing...</p>
+																</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">1-day click or 1-day View</p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+											                	<div>
+																	<p class="text-right">-</p>
+																	<p class="text-right">Mobile app Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	2,246
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                    <div class="text-right">
+											                    	 300
+											                    </div>
+											                </td>
+											                 <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		<p>-</p>
+											                		<p>Per Mobile App Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		₹ 35.84
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		Ongoing
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                   22Sep 2024-Ongoing
+											                </td>
+															<td>
+
+															</td>
+        												</tr>
+														<tr>
+        													<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+											               	<td class="border border-gray-300 p-2">
+																<!-- <label class="switch">
+																	<input type="checkbox" checked>
+  																		<span class="slider round"></span>
+																</label> -->
+																<input class="switch" type="checkbox" checked="true">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="flex items-center gap-3">
+											                		<p class="m-0 new-app">New App promotion ad set - Copy</p>
+											                	</div>
+											                </td>
+															<td class="border border-gray-300 p-2">
+																<div class="flex items-center gap-2">
+																		<input 
+																			type="radio" 
+																			id="option1" 
+																			name="options" 
+																			class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																			/>
+																			<p>Campaign off</p>
+																</div>
+															</td>
+															<td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Highest Volumn</p>
+																	<p class="text-right active-ads"><span>app installs</span></p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Using Campaing...</p>
+																</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">1-day click or 1-day View</p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+											                	<div>
+																	<p class="text-right">-</p>
+																	<p class="text-right">Mobile app Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	2,246
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                    <div class="text-right">
+											                    	 300
+											                    </div>
+											                </td>
+											                 <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		<p>-</p>
+											                		<p>Per Mobile App Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		₹ 35.84
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		Ongoing
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                   22Sep 2024-Ongoing
+											                </td>
+															<td>
+
+															</td>
+        												</tr>
+														<tr>
+        													<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+											               	<td class="border border-gray-300 p-2">
+																<!-- <label class="switch">
+																	<input type="checkbox" checked>
+  																		<span class="slider round"></span>
+																</label> -->
+																<input class="switch" type="checkbox" checked="true">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="flex items-center gap-3">
+											                		<p class="m-0 new-app">New App promotion ad set - Copy</p>
+											                	</div>
+											                </td>
+															<td class="border border-gray-300 p-2">
+																<div class="flex items-center gap-2">
+																		<input 
+																			type="radio" 
+																			id="option1" 
+																			name="options" 
+																			class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																			/>
+																			<p>Campaign off</p>
+																</div>
+															</td>
+															<td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Highest Volumn</p>
+																	<p class="text-right active-ads"><span>app installs</span></p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Using Campaing...</p>
+																</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">1-day click or 1-day View</p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+											                	<div>
+																	<p class="text-right">-</p>
+																	<p class="text-right">Mobile app Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	2,246
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                    <div class="text-right">
+											                    	 300
+											                    </div>
+											                </td>
+											                 <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		<p>-</p>
+											                		<p>Per Mobile App Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		₹ 35.84
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		Ongoing
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                   22Sep 2024-Ongoing
+											                </td>
+															<td>
+
+															</td>
+        												</tr>
+														<tr>
+        													<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+											               	<td class="border border-gray-300 p-2">
+																<!-- <label class="switch">
+																	<input type="checkbox" checked>
+  																		<span class="slider round"></span>
+																</label> -->
+																<input class="switch" type="checkbox" checked="true">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="flex items-center gap-3">
+											                		<p class="m-0 new-app">New App promotion ad set - Copy</p>
+											                	</div>
+											                </td>
+															<td class="border border-gray-300 p-2">
+																<div class="flex items-center gap-2">
+																		<input 
+																			type="radio" 
+																			id="option1" 
+																			name="options" 
+																			class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																			/>
+																			<p>Campaign off</p>
+																</div>
+															</td>
+															<td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Highest Volumn</p>
+																	<p class="text-right active-ads"><span>app installs</span></p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Using Campaing...</p>
+																</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">1-day click or 1-day View</p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+											                	<div>
+																	<p class="text-right">-</p>
+																	<p class="text-right">Mobile app Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	2,246
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                    <div class="text-right">
+											                    	 300
+											                    </div>
+											                </td>
+											                 <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		<p>-</p>
+											                		<p>Per Mobile App Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		₹ 35.84
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		Ongoing
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                   22Sep 2024-Ongoing
+											                </td>
+															<td>
+
+															</td>
+        												</tr>
+														<tr>
+        													<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+											               	<td class="border border-gray-300 p-2">
+																<!-- <label class="switch">
+																	<input type="checkbox" checked>
+  																		<span class="slider round"></span>
+																</label> -->
+																<input class="switch" type="checkbox" checked="true">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="flex items-center gap-3">
+											                		<p class="m-0 new-app">New App promotion ad set - Copy</p>
+											                	</div>
+											                </td>
+															<td class="border border-gray-300 p-2">
+																<div class="flex items-center gap-2">
+																		<input 
+																			type="radio" 
+																			id="option1" 
+																			name="options" 
+																			class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																			/>
+																			<p>Campaign off</p>
+																</div>
+															</td>
+															<td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Highest Volumn</p>
+																	<p class="text-right active-ads"><span>app installs</span></p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">Using Campaing...</p>
+																</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                </td>
+											                <td class="border border-gray-300 p-2">
+																<div>
+																	<p class="text-right">1-day click or 1-day View</p>
+																</div>
+															</td>
+											                <td class="border border-gray-300 p-2">
+											                	<div>
+																	<p class="text-right">-</p>
+																	<p class="text-right">Mobile app Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	2,246
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                    <div class="text-right">
+											                    	 300
+											                    </div>
+											                </td>
+											                 <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		<p>-</p>
+											                		<p>Per Mobile App Install</p>
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		₹ 35.84
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                	<div class="text-right">
+											                		Ongoing
+											                	</div>
+											                </td>
+											                <td class="border border-gray-300 p-2">
+											                   22Sep 2024-Ongoing
+											                </td>
+															<td>
+
+															</td>
+        												</tr>
+        											</tbody>
+        											
+					      					</table>	
+					      			 </div>	
+					      	</div>
+					    </div>
+					    <div id="third" class="hidden p-4">
+					      <!-- Third tab -->
+					      <div class="flex justify-between	">
+							<ul class="left-btn-group flex justify-between gap-1">
+								<li class="px-2 py-2 craete-btn flex items-center rounded cursor-pointer text-base"><i class='bx bx-plus mr-1'></i>Craete</li>
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer duplicate-btn text-black text-base"><i class='bx-file-blank mr-2'></i>Duplicate</li>
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="bi-pencils mr-2"></i>Edit</li>
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bxs-flask mr-2 text-black'></i>A/B test</li>
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer  text-black text-base">More<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+							  </ul>
+							  <ul class="left-btn-group flex justify-between gap-1">
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer duplicate-btn text-black text-base"><i class="layout-three-columns  mr-2"></i></i>Columns:Performance <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer edit-btn text-black text-base"><i class="break-down mr-2"></i>Breakdown <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bxs-report mr-2'></i>Reports <i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></li>
+								<li class="px-2 py-2 flex items-center rounded cursor-pointer test-btn text-black text-base"><i class='bx bx-export mr-2'></i>Export 
+									<span><i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></span></li>
+							  </ul>
+					      </div>
+					      <div class="mt-2 table-section">
+					      	<div class="overflow-x-auto">
+								<table class="min-w-full border border-gray-300">
+									<thead class="bg-white text-black">
+										<tr>
+											<th class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></th>
+											<th class="border border-gray-300 p-2">
+												off/On
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between"> 
+														Add 
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+												</div>
+												</th>
+											
+											<!-- Repeat headers -->
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between items-center"> 
+														<p>Delivery <i class='bx bx-up-arrow-alt' style="color: #0a78be;"></i></p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between">
+														<p>Add set name</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div>
+														<p>Bid strategy</p>
+														<p class="text-right" style="color:#ccc;font-size: 12px;"><span>Add set</span></p>
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div>
+														<p>Budget</p>
+														<p class="text-right" style="color:#ccc;font-size: 12px;"><span>Add set</span></p>
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div>
+														<p>Last significant edit</p>
+														
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div>
+														<p>Attribution setting</p>
+														
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between">
+														<p><i class="bi bi-info-circle-fill mr-1"></i>Result</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between">
+														<p>Reach</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between">
+														<p>Imprassions</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between">
+														<p>Cost per result</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between items-center">
+														<p class="text-left">Quality ranking <br/><span class="text-gray-400 font-normal">Add relevance...</span></p>
+														<p class="text-left"><i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></p>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between items-center">
+														<p class="text-left">Engagement rate ranking <br/><span class="text-gray-400 font-normal">Add relevance...</span></p>
+														<p class="text-left"><i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></p>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between items-center">
+														<p class="text-left">Conversion rate ranking <br/><span class="text-gray-400 font-normal">Add relevance...</span></p>
+														<p class="text-left"><i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i></p>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between items-center">
+														<p class="text-left">Amount spant</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<div class="flex justify-between items-center">
+														<p class="text-left">Ends</p>
+														<i class="bi bi-caret-down-fill ml-1 text-black relative top-px"></i>		
+												</div>
+											</th>
+											<th class="border border-gray-300 p-2">
+												<i class='bx bx-plus-circle'></i>
+											</th>
+										</tr>
+									</thead>
+										<tbody class="text-black">
+											<!-- Sample row, replicate this for 14 rows -->
+											<tr>
+												<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked>
+															<span class="slider round"></span>
+															</label> -->
+															<input class="switch" type="checkbox" checked="true">	 
+													</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+														<img src="https://via.placeholder.com/50" alt="Image 1">
+														<p class="m-0 ">New App promotion ad</p>
+													</div>
+												</td>
+												<!-- <td class="border border-gray-300 p-2"></td> -->
+													<td class="border border-gray-300 p-2">
+														<div class="flex items-center gap-2">
+															<input 
+																type="radio" 
+																id="option1" 
+																name="options" 
+																class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																/>
+															<p>Campaign off</p>
+															</div>
+													</td>
+																											
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="new-app">New App promotion ad set - ...</p>
+														<p class="text-left active-ads"><span>0 active ads</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Highest Volumn</p>
+														<p class="text-right active-ads"><span>app installs</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Using Campaing...</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">1-day click or 1-day View</p>
+													</div>
+												</td>
+												
+												<td class="border border-gray-300 p-2">
+													<div>
+															<p class="text-right">-</p>
+															<p class="text-right">Mobile app Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															300
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">320</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														<p>-</p>
+														<p>Per Mobile App Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														₹ 35.84
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														Ongoing
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													
+												</td>
+											</tr>
+											<!-- Repeat for more rows as needed -->
+										</tbody>
+										<tbody class="text-black">
+											<!-- Sample row, replicate this for 14 rows -->
+											<tr>
+												<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked>
+															<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+														<img src="https://via.placeholder.com/50" alt="Image 1">
+														<p class="m-0 ">New App promotion ad</p>
+													</div>
+												</td>
+												<!-- <td class="border border-gray-300 p-2"></td> -->
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-2">
+														<input 
+															type="radio" 
+															id="option1" 
+															name="options" 
+															class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+															/>
+															<p>Campaign off</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="new-app">New App promotion ad set - ...</p>
+														<p class="text-left active-ads"><span>0 active ads</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Highest Volumn</p>
+														<p class="text-right active-ads"><span>app installs</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Using Campaing...</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">1-day click or 1-day View</p>
+													</div>
+												</td>
+
+												<td class="border border-gray-300 p-2">
+													<div>
+															<p class="text-right">28</p>
+															<p class="text-right">Mobile app Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															2,246
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">2,424</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														<p>₹13.56</p>
+														<p>Per Mobile App Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														₹ 379.70
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														Ongoing
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													
+												</td>
+											</tr>
+											<!-- Repeat for more rows as needed -->
+										</tbody>
+										<tbody class="text-black">
+											<!-- Sample row, replicate this for 14 rows -->
+											<tr>
+												<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked>
+															<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+														<img src="https://via.placeholder.com/50" alt="Image 1">
+														<p class="m-0 ">New App promotion ad <i class="bi bi-pencil mr-2 text-black"></i></p>
+													</div>
+												</td>
+												<!-- <td class="border border-gray-300 p-2"></td> -->
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-2">
+														<input 
+															type="radio" 
+															id="option1" 
+															name="options" 
+															class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+															/>
+														<p>Campaign off</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="new-app">New App promotion ad set - ...</p>
+														<p class="text-left active-ads"><span>0 active ads</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Highest Volumn</p>
+														<p class="text-right active-ads"><span>app installs</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Using Campaing...</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">1-day click or 1-day View</p>
+													</div>
+												</td>
+
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">3</p>
+														<p class="text-right">Mobile app Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															141
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">150</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														<p>₹11.19</p>
+														<p>Per Mobile App Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														₹ 33.57
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														Ongoing
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													
+												</td>
+											</tr>
+											<!-- Repeat for more rows as needed -->
+										</tbody>
+										<tbody class="text-black">
+											<!-- Sample row, replicate this for 14 rows -->
+											<tr>
+												<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked>
+															<span class="slider round"></span>
+													</label> -->
+													<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+														<img src="https://via.placeholder.com/50" alt="Image 1">
+														<p class="m-0 ">
+															New App promotion ad
+														</p>
+													</div>
+													<div class="flex gap-3" style="padding-left: 4rem;">
+																<p><i class='bx bxs-bar-chart-alt-2 mr-2'></i>view charts</p>
+																<p><i class="bi bi-pencil mr-2 text-black mr-2"></i>Edit</p>
+																<p><i class='bx bx-duplicate mr-2'></i>Duplicate</p>
+																<p><i class='bx bxs-pin mr-2'></i>Pin</p>
+															</div>
+												</td>
+												<!-- <td class="border border-gray-300 p-2"></td> -->
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-2">
+														<input 
+															type="radio" 
+															id="option1" 
+															name="options" 
+															class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+															/>
+															<p>Campaign off</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="new-app">New App promotion ad set - ...</p>
+														<p class="text-left active-ads"><span>0 active ads</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Highest Volumn</p>
+														<p class="text-right active-ads"><span>app installs</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Using Campaing...</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">1-day click or 1-day View</p>
+													</div>
+												</td>
+
+												<td class="border border-gray-300 p-2">
+													<div>
+															<p class="text-right">15</p>
+															<p class="text-right">Mobile app Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															2,099
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">2,410</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														<p>₹21.65</p>
+														<p>Per Mobile App Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															<div>
+															<p class="text-right">Blow average<br/><span class="text-gray-400 font-normal">Bottom 35% of ads</span></p>
+													</div>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														Above average
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															Above average
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														₹ 324.74
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														Ongoing
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													
+												</td>
+											</tr>
+											<!-- Repeat for more rows as needed -->
+										</tbody>
+										<tbody class="text-black">
+											<!-- Sample row, replicate this for 14 rows -->
+											<tr>
+												<td class="border border-gray-300 p-2"><input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"></td>
+												<td class="border border-gray-300 p-2">
+													<!-- <label class="switch">
+														<input type="checkbox" checked>
+															<span class="slider round"></span>
+														</label> -->
+														<input class="switch" type="checkbox" checked="true">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-3">
+														<img src="https://via.placeholder.com/50" alt="Image 1">
+														<p class="m-0 ">New App promotion ad</p>
+													</div>
+												</td>
+												<!-- <td class="border border-gray-300 p-2"></td> -->
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-2">
+															<input 
+																type="radio" 
+																id="option1" 
+																name="options" 
+																class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																/>
+																<p>Campaign off</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="new-app">New App promotion ad set - ...</p>
+														<p class="text-left active-ads"><span>0 active ads</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Highest Volumn</p>
+														<p class="text-right active-ads"><span>app installs</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Using Campaing...</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">1-day click or 1-day View</p>
+													</div>
+												</td>
+
+												<td class="border border-gray-300 p-2">
+													<div>
+															<p class="text-right">168</p>
+															<p class="text-right">Mobile app Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															11,671
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">15,565</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														<p>₹15.56</p>
+														<p>Per Mobile App Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														₹2,614.18
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														Ongoing
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													
+												</td>
+											</tr>
+											<!-- Repeat for more rows as needed -->
+										</tbody>
+										<tbody class="text-black">
+											<!-- Sample row, replicate this for 14 rows -->
+											<tr>
+												<td colspan="2" class="border border-gray-300 p-2">
+													<!-- <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600"> -->
+												</td>
+												<!-- <td class="border border-gray-300 p-2">
+														<label class="switch">
+																				<input type="checkbox" checked>
+																			<span class="slider round"></span>
+																		</label> 
+												</td> -->
+												<td class="border border-gray-300 p-2">
+													<!-- <div class="flex items-center gap-3">
+														<img src="https://via.placeholder.com/50" alt="Image 1">
+														<p class="m-0 ">New App promotion ad</p>
+													</div> -->
+													<div class="text-left">
+															<p>Results From ads <i class="bi bi-info-circle-fill mr-2"></i></p>
+													</div>
+												</td>
+												<!-- <td class="border border-gray-300 p-2"></td> -->
+												<td class="border border-gray-300 p-2">
+													<div class="flex items-center gap-2">
+															<input 
+																type="radio" 
+																id="option1" 
+																name="options" 
+																class="form-radio text-blue-600 h-5 w-5 border-gray-300 focus:ring focus:ring-blue-500" 
+																/>
+																<p>Campaign off</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="new-app">New App promotion ad set - ...</p>
+														<p class="text-left active-ads"><span>0 active ads</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Highest Volumn</p>
+														<p class="text-right active-ads"><span>app installs</span></p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">Using Campaing...</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+														<p class="text-right">1-day click or 1-day View</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div>
+															<p class="text-right">214</p>
+															<p class="text-right">Mobile app Install</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															<p class="text-right">16.260<p>
+															<p>Accounts Centre accou...</p>	
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															<p>20,869</p>
+															<p>Total</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														<p>₹15.83</p>
+														<p>Per Mobile App Install</p>
+													</div>
+												</td>
+												<td colspan="3" class="border border-gray-300 p-2">
+													<div class="text-right">
+															
+													</div>
+												</td>
+												<!-- <td class="border border-gray-300 p-2">
+													<div class="text-right">
+														-
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															-
+													</div>
+												</td> -->
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+															<p>₹3,3880.3</p>
+															<p>Total Spant</p>
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													<div class="text-right">
+														Ongoing
+													</div>
+												</td>
+												<td class="border border-gray-300 p-2">
+													
+												</td>
+											</tr>
+											<!-- Repeat for more rows as needed -->
+										</tbody>
+									</table>
+							</div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+        </div>
+
+        <div id="messagesContent" class="hidden">
+        
+        </div>
+        <div id="analyticsContent" class="hidden">
+
+        </div>
+        <div id="filesContent" class="hidden">
+          <!-- <div class="bg-gray-800 rounded-xl p-6 mb-8">
+            <h3 class="text-xl font-semibold mb-4">Recent Files</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
+                <div class="flex items-center">
+                  <i class="fas fa-file-pdf text-red-500 text-2xl mr-4"></i>
+                  <div>
+                    <p class="font-semibold">Annual Report 2023.pdf</p>
+                    <p class="text-sm text-gray-400">5.2 MB</p>
+                  </div>
+                </div>
+                <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
+              </li>
+              <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
+                <div class="flex items-center">
+                  <i class="fas fa-file-excel text-green-500 text-2xl mr-4"></i>
+                  <div>
+                    <p class="font-semibold">Financial Projections.xlsx</p>
+                    <p class="text-sm text-gray-400">3.7 MB</p>
+                  </div>
+                </div>
+                <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
+              </li>
+              <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
+                <div class="flex items-center">
+                  <i class="fas fa-file-image text-purple-500 text-2xl mr-4"></i>
+                  <div>
+                    <p class="font-semibold">Product Mockups.zip</p>
+                    <p class="text-sm text-gray-400">127.3 MB</p>
+                  </div>
+                </div>
+                <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <div id="usersContent" class="hidden">
+          <!-- <div class="bg-gray-800 rounded-xl p-6 mb-8">
+            <h3 class="text-xl font-semibold mb-4">User Management</h3>
+            <table class="w-full">
+              <thead>
+                <tr>
+                  <th class="text-left py-2">Name</th>
+                  <th class="text-left py-2">Email</th>
+                  <th class="text-left py-2">Role</th>
+                  <th class="text-left py-2">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-2">John Doe</td>
+                  <td class="py-2">john@example.com</td>
+                  <td class="py-2">Admin</td>
+                  <td class="py-2">
+                    <button class="text-blue-500 hover:text-blue-600 mr-2"><i class="fas fa-edit"></i></button>
+                    <button class="text-red-500 hover:text-red-600"><i class="fas fa-trash"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2">Jane Smith</td>
+                  <td class="py-2">jane@example.com</td>
+                  <td class="py-2">Editor</td>
+                  <td class="py-2">
+                    <button class="text-blue-500 hover:text-blue-600 mr-2"><i class="fas fa-edit"></i></button>
+                    <button class="text-red-500 hover:text-red-600"><i class="fas fa-trash"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2">Bob Johnson</td>
+                  <td class="py-2">bob@example.com</td>
+                  <td class="py-2">User</td>
+                  <td class="py-2">
+                    <button class="text-blue-500 hover:text-blue-600 mr-2"><i class="fas fa-edit"></i></button>
+                    <button class="text-red-500 hover:text-red-600"><i class="fas fa-trash"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+        </div>
+        <div id="settingsContent" class="hidden">
+          
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const menuItems = document.querySelectorAll(".menu-item");
+	  const contentSections = document.querySelectorAll('[id$="Content"]');
+	  const pageTitle = document.getElementById("pageTitle");
+	  // const profileMenuBtn = document.getElementById("profileMenuBtn");
+	  // const profileDropdown = document.getElementById("profileDropdown");
+	  // const notificationBtn = document.getElementById("notificationBtn");
+
+	  menuItems.forEach((item) => {
+	    item.addEventListener("click", (e) => {
+	      e.preventDefault();
+	      const targetPage = item.querySelector("a").getAttribute("data-page");
+
+	      menuItems.forEach((i) => i.classList.remove("active"));
+	      item.classList.add("active");
+
+	      contentSections.forEach((section) => {
+	        section.classList.add("hidden");
+	        if (section.id === `${targetPage}Content`) {
+	          section.classList.remove("hidden");
+	          gsap.from(section, {
+	            duration: 0.5,
+	            opacity: 0,
+	            y: 20,
+	            ease: "power3.out"
+	          });
+	          pageTitle.textContent =
+	            targetPage.charAt(0).toUpperCase() + targetPage.slice(1);
+	        }
+	      });
+	    });
+	  });
+let tabsContainer = document.querySelector("#tabs");
+let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+console.log(tabTogglers);
+tabTogglers.forEach(function (toggler) {
+  toggler.addEventListener("click", function (e) {
+    e.preventDefault();
+    let tabName = this.getAttribute("href");
+    let tabContents = document.querySelector("#tab-contents");
+    for (let i = 0; i < tabContents.children.length; i++) {
+      tabTogglers[i].parentElement.classList.remove(
+        "border-t",
+        "border-r",
+        "border-l",
+        "-mb-px",
+        "tab-active",
+        "bg-white"
+      );
+      tabContents.children[i].classList.remove("hidden");
+      if ("#" + tabContents.children[i].id === tabName) {
+        continue;
+      }
+      tabContents.children[i].classList.add("hidden");
+    }
+    e.target.parentElement.classList.add(
+      "border-t",
+      "border-r",
+      "border-l",
+      "tab-active",
+      "-mb-px",
+      "bg-white"
+    );
+  });
+});
+//for popover
+	var popovers = document.querySelectorAll('.popover');
+	var popoverTriggers = document.querySelectorAll('.popover__trigger');
+	// Function to close all popovers except the one that is clicked
+	function closeAllOthers(ignore) {
+		for (var i = 0; i < popovers.length; i++) {
+			if (popovers[i] !== ignore) {
+				popovers[i].classList.remove('popover--active');	
+			}
+		}
+	}
+	// Add click event listener to each popover trigger
+	for (var i = 0; i < popoverTriggers.length; i++) {
+		popoverTriggers[i].addEventListener('click', function(event) {
+			event.stopPropagation(); // Prevent the click from bubbling up to the body
+			closeAllOthers(this.parentElement);
+			this.parentElement.classList.toggle('popover--active');
+		});
+	}
+	// Add click event listener to the body
+	document.body.addEventListener('click', function() {
+		closeAllOthers(null); // Close all popovers
+	});
+
+//for clalendar
+class Calendar {
+  constructor () {
+    this.monthDiv = document.querySelector('.cal-month__current')
+    this.headDivs = document.querySelectorAll('.cal-head__day')
+    this.bodyDivs = document.querySelectorAll('.cal-body__day')
+    this.nextDiv = document.querySelector('.cal-month__next')
+    this.prevDiv = document.querySelector('.cal-month__previous')
+  }
+  init () {
+    moment.locale(window.navigator.userLanguage || window.navigator.language) 
+    this.month = moment()
+    this.today = this.selected = this.month.clone()
+    this.weekDays = moment.weekdaysShort(true)
+    this.headDivs.forEach((day, index) => {
+      day.innerText = this.weekDays[index]
+    })
+    this.nextDiv.addEventListener('click', _ => { this.addMonth() })
+    this.prevDiv.addEventListener('click', _ => { this.removeMonth() })
+    this.bodyDivs.forEach(day => {
+      day.addEventListener('click', e => {
+        const date = +e.target.innerHTML < 10 ? `0${e.target.innerHTML}` : e.target.innerHTML
+        if (e.target.classList.contains('cal-day__month--next')) {
+          this.selected = moment(`${this.month.add(1, 'month').format('YYYY-MM')}-${date}`)
+        } else if (e.target.classList.contains('cal-day__month--previous')) {
+          this.selected = moment(`${this.month.subtract(1, 'month').format('YYYY-MM')}-${date}`)
+        } else {
+          this.selected = moment(`${this.month.format('YYYY-MM')}-${date}`)
+        }
+        this.update()
+      })
+    }) 
+    this.update()
+  }
+  update () {
+    this.calendarDays = {
+      first: this.month.clone().startOf('month').startOf('week').date(),
+      last: this.month.clone().endOf('month').date()
+    }
+    this.monthDays = {
+      lastPrevious: this.month.clone().subtract(1,'months').endOf('month').date(),
+      lastCurrent: this.month.clone().endOf('month').date()
+    }
+    this.monthString = this.month.clone().format('MMMM YYYY') 
+    this.draw()
+  }
+  addMonth () {
+    this.month.add(1, 'month') 
+    this.update()
+  }
+  removeMonth () {
+    this.month.subtract(1, 'month')
+    this.update()
+  }
+  
+  draw () {
+    this.monthDiv.innerText = this.monthString
+    let index = 0
+    if (this.calendarDays.first > 1) {
+      for (let day = this.calendarDays.first; day <= this.monthDays.lastPrevious; index ++) {
+        this.bodyDivs[index].innerText = day++
+        this.cleanCssClasses(false, index)
+        this.bodyDivs[index].classList.add('cal-day__month--previous')
+      } 
+    }
+    let isNextMonth = false
+    for (let day = 1; index <= this.bodyDivs.length - 1; index ++) {
+      if (day > this.monthDays.lastCurrent) {
+        day = 1
+        isNextMonth = true
+      }
+      this.cleanCssClasses(true, index)
+      if (!isNextMonth) {
+        if (day === this.today.date() && this.today.isSame(this.month, 'day')) {
+          this.bodyDivs[index].classList.add('cal-day__day--today') 
+        }
+        if (day === this.selected.date() && this.selected.isSame(this.month, 'month')) {
+          this.bodyDivs[index].classList.add('cal-day__day--selected') 
+        }
+        this.bodyDivs[index].classList.add('cal-day__month--current')
+      } else {
+        this.bodyDivs[index].classList.add('cal-day__month--next')
+      }
+      this.bodyDivs[index].innerText = day++
+    }
+  }
+  cleanCssClasses (selected, index) {
+    this.bodyDivs[index].classList.contains('cal-day__month--next') && 
+      this.bodyDivs[index].classList.remove('cal-day__month--next')
+    this.bodyDivs[index].classList.contains('cal-day__month--previous') && 
+      this.bodyDivs[index].classList.remove('cal-day__month--previous')
+    this.bodyDivs[index].classList.contains('cal-day__month--current') &&
+      this.bodyDivs[index].classList.remove('cal-day__month--current')
+    this.bodyDivs[index].classList.contains('cal-day__day--today') && 
+      this.bodyDivs[index].classList.remove('cal-day__day--today')
+    if (selected) {
+      this.bodyDivs[index].classList.contains('cal-day__day--selected') && 
+        this.bodyDivs[index].classList.remove('cal-day__day--selected') 
+    }
+  }
+}
+const cal = new Calendar()
+cal.init()
+});
+  </script>
+</body>
+</html>

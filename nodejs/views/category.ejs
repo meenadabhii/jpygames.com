@@ -1,0 +1,28 @@
+<%- include('header') %>
+
+<main class="max-w-[1024px] m-auto">
+    <div class="px-3">
+        <div class="px-2">
+            <div class="flex flex-wrap justify-center gap-4 pb-10">
+                <% for (let i = 0; i < data.length; i++) {
+                    const element = data[i];
+                    %>
+                    <div class="p-3 bg-[#121237] rounded-2xl max-w-[150px] sm:max-w-[200px]">
+                        <img src="<%- element.img %>" alt="" class="rounded-xl w-full">
+                        <a href="/game/<%- element.slug %>">
+                            <img src="/image/play_button.png" alt="" class="w-[60px] m-auto mt-[-25px]">
+                        </a>
+                        <div class="text-center text-[#ffffff] font-medium"><%- element.name %></div>
+                    </div>
+                    <%
+                } %>
+            </div>
+        </div>
+    </div>
+    <div id="loading-screen">
+        <img src="/image/logo.png" alt="loding logo">
+        <div class="spinner"></div>
+    </div>
+</main>
+
+<%- include('footer') %>

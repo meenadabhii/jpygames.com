@@ -1,0 +1,450 @@
+[
+    {
+        "slug":"up-hill-racing",
+        "name":"Up Hill Racing",
+        "img":"/image/uphillracing.png",
+        "type":"sport",
+        "url":"https://softgames.cdn.start.gg/9mw8rk6nb6kr/v2/index.html"
+    },
+    {
+        "slug":"archery-king",
+        "name":"Archery King",
+        "img":"/image/archeryking.png",
+        "type":"sport",
+        "url":"https://codethislab.cdn.start.gg/9n5gkc4t7lzz/v19/index.html"
+    },
+    {
+        "slug":"midnight-pool-classic",
+        "name":"Midnight Pool Classic",
+        "img":"/image/midnightpoolclassic.png",
+        "type":"sport",
+        "url":"https://poolrush.frvr.com/"
+    },
+    {
+        "slug":"gameloft-sports-minigame",
+        "name":"Gameloft Sports Minigame",
+        "img":"/image/gameloftsportsminigame.png",
+        "type":"action",
+        "url":"https://cdn.ludigames.com/microsoft/start-gameloftSportsMinigameCollection/08-cdn/h5/gameloftSportsMinigameCollectionFree/play.html"
+    },
+    {
+        "slug":"asphalt-retro",
+        "name":"Asphalt Retro",
+        "img":"/image/asphaltretro.png",
+        "type":"sport",
+        "url":"https://cdn.ludigames.com/microsoft/start-asphaltRetro/08-cdn/h5/asphaltRetroFree/"
+    },
+    {
+        "slug":"bike-racing",
+        "name":"Bike Racing",
+        "img":"/image/bikeracing.png",
+        "type":"sport",
+        "url":"https://softgames.cdn.start.gg/9pjmwr3lfc0d/v5/index.html"
+    },
+    {
+        "slug":"solitaire-champions",
+        "name":"Solitaire Champions",
+        "img":"/image/solitairechampions.png",
+        "type":"sport",
+        "url":"https://hammerplay.cdn.start.gg/9nf29519b076/v1/index.html"
+    },
+    {
+        "slug":"bubble-fall",
+        "name":"Bubble Fall",
+        "img":"/image/bubblefall.png",
+        "type":"arcade",
+        "url":"https://html5.suncs.io/bubble-fall/msg/"
+    },
+    {
+        "slug":"master-chess",
+        "name":"Master Chess",
+        "img":"/image/masterchess.png",
+        "type":"arcade",
+        "url":"https://codethislab.cdn.start.gg/9nrl2nj7l6s1/v6/index.html"
+    },
+    {
+        "slug":"idle-mining-empire",
+        "name":"Idle Mining Empire",
+        "img":"/image/idleminingempire.png",
+        "type":"action",
+        "url":"https://marketjs.cdn.start.gg/9n3wz0fzx1hr/v27/index.html"
+    },
+    {
+        "slug":"harbor-operator",
+        "name":"Harbor Operator",
+        "img":"/image/harboroperator.png",
+        "type":"action",
+        "url":"https://marketjs.cdn.start.gg/9pbd0qpb8kwz/v5/index.html"
+    },
+    {
+        "slug":"backgammon",
+        "name":"Backgammon",
+        "img":"/image/backgammon.png",
+        "type":"arcade",
+        "url":"https://marketjs.cdn.start.gg/9n7mfxkl7w06/v5/index.html"
+    },
+    {
+        "slug":"hotel-manager",
+        "name":"Hotel Manager",
+        "img":"/image/hotelmanager.png",
+        "type":"arcade",
+        "url":"https://codethislab.cdn.start.gg/9mt20fq1f5zj/v1/index.html"
+    },
+    {
+        "slug":"ultimate-tic-tac-toe",
+        "name":"Ultimate Tic Tac Toe",
+        "img":"/image/ultimatetictactoe.png",
+        "type":"arcade",
+        "url":"https://codethislab.cdn.start.gg/9p4z7gtl3mlh/v9/index.html"
+    },
+    {
+        "slug":"island-of-treasures",
+        "name":"Island of Treasures",
+        "img":"/image/islandoftreasures.png",
+        "type":"action",
+        "url":"https://hammerplay.cdn.start.gg/9pk306zzrpr5/v6/index.html"
+    },
+    {
+        "slug":"blackjack",
+        "name":"Blackjack",
+        "img":"/image/blackjack.png",
+        "type":"sport",
+        "url":"https://codethislab.cdn.start.gg/9mt4hk2d6rcn/v1/index.html"
+    },
+    {
+        "slug":"roulette-royale",
+        "name":"Roulette Royale",
+        "img":"/image/rouletteroyale.png",
+        "type":"sport",
+        "url":"https://codethislab.cdn.start.gg/9pmdqv93xn3r/v1/index.html"
+    },
+    {
+        "slug":"mk48",
+        "name":"Mk48",
+        "img":"/image/mk48.png",
+        "type":"action",
+        "url":"https://microsoft.mk48.io/"
+    },
+    {
+        "slug":"parking-block",
+        "name":"Parking Block",
+        "img":"/image/parking-block.png",
+        "type":"sport",
+        "url":"https://codethislab.cdn.start.gg/9mwhlgqzrsf2/v1/index.html"
+    },
+    {
+        "slug":"code-bananas",
+        "name":"Code Bananas",
+        "img":"/image/code-bananas.png",
+        "type":"action",
+        "url":"https://marketjs.cdn.start.gg/9nt6qmtc0mnc/v3/index.html"
+    },
+    {
+        "slug":"ball-drop",
+        "name":"Ball Drop",
+        "img":"/image/ball-drop.png",
+        "type":"sport",
+        "url":"https://marketjs.cdn.start.gg/9n5cr504q14r/v3/index.html"
+    },
+    {
+        "slug":"stack-the-containers",
+        "name":"Stack The Containers",
+        "img":"/image/stack-the-containers.png",
+        "type":"arcade",
+        "url":"https://marketjs.cdn.start.gg/9pk2c9cd597r/v4/index.html"
+    },
+    {
+        "slug":"secrets-of-charmland",
+        "name":"Secrets of Charmland",
+        "img":"/image/secrets-of-charmland.png",
+        "type":"arcade",
+        "url":"https://adventure.cleverappssg.com/publish/html5/msstart/"
+    },
+    {
+        "slug":"stickman-brawl",
+        "name":"Stickman Brawl",
+        "img":"/image/stickman-brawl.png",
+        "type":"arcade",
+        "url":"https://marketjs.cdn.start.gg/9pmxzdnh0xcq/v9/index.html"
+    },
+    {
+        "slug":"bricks-breaker-deluxe-crusher",
+        "name":"Bricks Breaker Deluxe Crusher",
+        "img":"/image/bricks-breaker-deluxe-crusher.png",
+        "type":"arcade",
+        "url":"https://playzool.com/games/bricksBreaker/"
+    },
+    {
+        "slug":"planet-chaos",
+        "name":"Planet Chaos",
+        "img":"/image/planet-chaos.png",
+        "type":"arcade",
+        "url":"https://hammerplay.cdn.start.gg/9mtndqf7rjgg/v6/index.html"
+    },
+    {
+        "slug":"sky-bridge-classic",
+        "name":"Sky Bridge Classic",
+        "img":"/image/sky-bridge-classic.png",
+        "type":"arcade",
+        "url":"https://cdn.ludigames.com/microsoft/start-skyBridge/09-cdn/h5/skyBridgeFree/"
+    },
+    {
+        "slug":"jewel-academy",
+        "name":"Jewel Academy",
+        "img":"/image/jewel-academy.png",
+        "type":"arcade",
+        "url":"https://cdn.games.mobinozer.com/ext/msn/msn-jewel-academy/prod-msn/v7/"
+    },
+    {
+        "slug":"tile-connect-master",
+        "name":"Tile Connect Master",
+        "img":"/image/tile-connect-master.png",
+        "type":"arcade",
+        "url":"https://tile-connect.sunfs.app/ms-games/"
+    },
+    {
+        "slug":"4-pics-1-word",
+        "name":"4 Pics 1 Word",
+        "img":"/image/4-pics-1-word.png",
+        "type":"arcade",
+        "url":"https://start.4pics1word.app/"
+    },
+    {
+        "slug":"candy-world-match3-mania",
+        "name":"Candy World : match3 mania",
+        "img":"/image/candy-world-match3-mania.png",
+        "type":"arcade",
+        "url":"https://playzool.com/games/candyWorldMM/"
+    },
+    {
+        "slug":"spades",
+        "name":"Spades",
+        "img":"/image/spades.png",
+        "type":"arcade",
+        "url":"https://marketjs.cdn.start.gg/9n965bpl2zp1/v12/index.html"
+    },
+    {
+        "slug":"candy-riddles-free-match-3-puzzle",
+        "name":"Candy Riddles: Free Match 3 Puzzle",
+        "img":"/image/candy-riddles-free-match-3-puzzle.png",
+        "type":"arcade",
+        "url":"https://riddles.labsystech.ru/publish/html5/msstart/"
+    },
+    {
+        "slug":"fruit-chopper",
+        "name":"Fruit Chopper",
+        "img":"/image/fruit-chopper.png",
+        "type":"arcade",
+        "url":"https://hammerplay.cdn.start.gg/9n8wl40938mq/v1/index.html"
+    },
+    {
+        "slug":"cricket-frvr",
+        "name":"Cricket FRVR",
+        "img":"/image/cricket-frvr.png",
+        "type":"sport",
+        "url":"https://cricket.frvr.com/"
+    },
+    {
+        "slug":"rally-champion",
+        "name":"Rally Champion",
+        "img":"/image/rally-champion.png",
+        "type":"sport",
+        "url":"https://marketjs.cdn.start.gg/9pmdcq52j3hj/v1/index.html"
+    },
+    {
+        "slug":"master-chess",
+        "name":"Master Chess",
+        "img":"/image/master-chess.png",
+        "type":"arcade",
+        "url":"https://codethislab.cdn.start.gg/9nrl2nj7l6s1/v12/index.html"
+    },
+    {
+        "slug":"hunter-hitman",
+        "name":"Hunter Hitman",
+        "img":"/image/hunter-hitman.png",
+        "type":"action",
+        "url":"https://marketjs.cdn.start.gg/9n8bq7npxbfw/v9/index.html"
+    },
+    {
+        "slug":"penalty-challenge-multiplayer",
+        "name":"Penalty Challenge Multiplayer",
+        "img":"/image/penalty-challenge-multiplayer.png",
+        "type":"sport",
+        "url":"https://codethislab.cdn.start.gg/9pm59hcfhbjx/v6/index.html"
+    },
+    {
+        "slug":"bubbles",
+        "name":"Bubbles",
+        "img":"/image/bubbles.png",
+        "type":"arcade",
+        "url":"https://cdn.games.mobinozer.com/ext/msn/msn-bubbles/prod/v1/"
+    },
+    {
+        "slug":"kite-play",
+        "name":"Kite Play",
+        "img":"/image/kite-play.png",
+        "type":"action",
+        "url":"https://cdn.ludigames.com/microsoft/start-kite/06-cdn/h5/kiteFree/play.html"
+    },
+    {
+        "slug":"idle-hotel-empire",
+        "name":"Idle Hotel Empire",
+        "img":"/image/idle-hotel-empire.png",
+        "type":"arcade",
+        "url":"https://marketjs.cdn.start.gg/9n4rmz09hx1v/v7/index.html"
+    },
+    {
+        "slug":"blockbuster-adventures-puzzle",
+        "name":"BlockBuster: Adventures Puzzle",
+        "img":"/image/blockbuster-adventures-puzzle.png",
+        "type":"arcade",
+        "url":"https://woodenblock.cleverappssg.com/publish/html5/msstart/"
+    },
+    {
+        "slug":"ludo-classic-a-dice-game",
+        "name":"Ludo classic : a dice game",
+        "img":"/image/ludo-classic-a-dice-game.png",
+        "type":"arcade",
+        "url":"https://playzool.com/games/ludoClassicADG/"
+    },
+    {
+        "slug":"basketball-all-stars",
+        "name":"Basketball All Stars",
+        "img":"/image/basketball-all-stars.png",
+        "type":"sport",
+        "url":"https://softgames.cdn.start.gg/9ndkp76s2h24/v10/index.html"
+    },
+    {
+        "slug":"designville",
+        "name":"Designville",
+        "img":"/image/designville.png",
+        "type":"arcade",
+        "url":"https://ms-start.designville-merge.g.tapclap.com/"
+    },
+    {
+        "slug":"darts-pro",
+        "name":"Darts Pro",
+        "img":"/image/darts-pro.png",
+        "type":"sport",
+        "url":"https://codethislab.cdn.start.gg/9n3n198l6zpj/v3/index.html"
+    },
+    {
+        "slug":"pinball-basketball",
+        "name":"Pinball Basketball",
+        "img":"/image/pinball-basketball.png",
+        "type":"sport",
+        "url":"https://marketjs.cdn.start.gg/9n4wl4c46knl/v1/index.html"
+    },
+    {
+        "slug":"midnight-pool-classic",
+        "name":"Midnight Pool Classic",
+        "img":"/image/midnight-pool-classic.png",
+        "type":"sport",
+        "url":"https://cdn.ludigames.com/microsoft/start-midnightPoolClassic/09-cdn/h5/midnightPoolClassicFree/"
+    },
+    {
+        "slug":"dinosaurs-merge-master",
+        "name":"Dinosaurs Merge Master",
+        "img":"/image/dinosaurs-merge-master.png",
+        "type":"action",
+        "url":"https://dinosaurs-merge-master.sunfs.app/ms-games/"
+    },
+    {
+        "slug":"drift-boss",
+        "name":"Drift Boss",
+        "img":"/image/drift-boss.png",
+        "type":"action",
+        "url":"https://marketjs.cdn.start.gg/9p4mrh7g580x/v10/index.html"
+    },
+    {
+        "slug":"santa-parkour",
+        "name":"Santa Parkour",
+        "img":"/image/santa-parkour.png",
+        "type":"arcade",
+        "url":"https://marketjs.cdn.start.gg/9n7c9gz12jtz/v4/index.html"
+    },
+    {
+        "slug":"rachel-holmes-find-differences",
+        "name":"Rachel Holmes: find differences",
+        "img":"/image/rachel-holmes-find-differences.png",
+        "type":"arcade",
+        "url":"https://differences.cleverappssg.com/publish/html5/msstart/"
+    },
+    {
+        "slug":"liquid-puzzle-sort-the-colors",
+        "name":"Liquid puzzle: sort the colors",
+        "img":"/image/liquid-puzzle-sort-the-colors.png",
+        "type":"arcade",
+        "url":"https://playzool.com/games/liquidPuzzleSTC/"
+    },
+    {
+        "slug":"puzzle-daily",
+        "name":"Puzzle Daily",
+        "img":"/image/puzzle-daily.png",
+        "type":"arcade",
+        "url":"https://puzzleplayz.us/g/tcap?domain=msngames.tribunecontentagency.com"
+    },
+    {
+        "slug":"wood-block-puzzle",
+        "name":"Wood Block Puzzle",
+        "img":"/image/wood-block-puzzle.png",
+        "type":"arcade",
+        "url":"https://softgames.cdn.start.gg/9n81bzp5knxp/v10/index.html"
+    },
+    {
+        "slug":"monopoly-sudoku",
+        "name":"Monopoly Sudoku",
+        "img":"/image/monopoly-sudoku.png",
+        "type":"arcade",
+        "url":"https://cdn.games.mobinozer.com/ext/monopoly_sudoku_microsoft/prod/3.1.3-0/"
+    },
+    {
+        "slug":"solitaire-mahjong-juicy",
+        "name":"Solitaire Mahjong Juicy",
+        "img":"/image/solitaire-mahjong-juicy.png",
+        "type":"arcade",
+        "url":"https://softgames.cdn.start.gg/9pnq8c4vgsnr/v5/index.html"
+    },
+    {
+        "slug":"merge-alphabet",
+        "name":"Merge Alphabet",
+        "img":"/image/merge-alphabet.png",
+        "type":"arcade",
+        "url":"https://marketjs.cdn.start.gg/9p46mtb82zkh/v19/index.html"
+    },
+    {
+        "slug":"classic-nonogram",
+        "name":"Classic Nonogram",
+        "img":"/image/classic-nonogram.png",
+        "type":"arcade",
+        "url":"https://codethislab.cdn.start.gg/9np2059nr3db/v24/index.html"
+    },
+    {
+        "slug":"ultimate-sudoku",
+        "name":"Ultimate Sudoku",
+        "img":"/image/ultimate-sudoku.png",
+        "type":"arcade",
+        "url":"https://codethislab.cdn.start.gg/9nkxp0kxmpdz/v1/index.html"
+    },
+    {
+        "slug":"kubok-999",
+        "name":"Kubok 999",
+        "img":"/image/kubok-999.png",
+        "type":"arcade",
+        "url":"https://kubok.it/games/kubok-999/index-70.html"
+    },
+    {
+        "slug":"lights",
+        "name":"lights",
+        "img":"/image/lights.png",
+        "type":"arcade",
+        "url":"https://codethislab.cdn.start.gg/9nkbwk7x5858/v1/index.html"
+    },
+    {
+        "slug":"parking-panic",
+        "name":"Parking panic",
+        "img":"/image/parking-panic.png",
+        "type":"arcade",
+        "url":"https://playzool.com/games/parkingPanic/"
+    }
+]
